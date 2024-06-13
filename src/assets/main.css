@@ -1,0 +1,44 @@
+@import './base.css';
+
+*{
+  scrollbar-width: none;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+input{
+  outline: none;
+}
+
+ul, li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.fp-watermark{
+  display: none;
+}
+
+.fp-overflow{
+  height: 100vh;
+}
