@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "image": "template1.png",
+        "prompt": "Mona Lisa, The mysterious lady, with her profound and enchanting smile."
+    },
+    {
+        "id": "2",
+        "image": "template2.jpg",
+        "prompt": "Nameless girl, Her gaze is firm and profound, as if she possesses endless stories and strength."
+    },
+    {
+        "id": "3",
+        "image": "template3.png",
+        "prompt": "portrait, The eyes reveal profound wisdom and a unique personality, making the portrait unforgettable."
+    },
+    {
+        "id": "4",
+        "image": "template4.jpg",
+        "prompt": "girl with a pearl earring ,Her eyes are clear and innocent, and the pearl earrings sway gently at her ear, adding a touch of gentleness and elegance."
+    }
+]

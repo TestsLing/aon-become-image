@@ -6,7 +6,9 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 // import VueDevTools from 'vite-plugin-vue-devtools'
 import commonjs from 'vite-plugin-commonjs';
 
-
+import AutoImport from 'unplugin-auto-import/vite';
+import Components from 'unplugin-vue-components/vite';
+import { VantResolver } from '@vant/auto-import-resolver';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -15,6 +17,12 @@ export default defineConfig({
     vue(),
     vueJsx(),
     // VueDevTools(),
+    AutoImport({
+      resolvers: [VantResolver()],
+    }),
+    Components({
+      resolvers: [VantResolver()],
+    }),
   ],
   base: '/',
   resolve: {
@@ -24,7 +32,7 @@ export default defineConfig({
   },
   server: {
     host: '0.0.0.0',
-    port: 8080,
+    port: 8081,
     proxy: {
       '/api': {
         target: 'https://api.aonet.ai/', 

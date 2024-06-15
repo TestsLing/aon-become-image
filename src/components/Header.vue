@@ -2,15 +2,21 @@
 	<div class="custom-navbar">
 		<img src="../assets/logo_.png" class="logo" @click="goIndex"></img>
 
-		<div class="title">5分钟构建知名名画风格图像</div>
-
+		<div class="title">5分钟构建世界名画</div>
+    <div class="right">
+      <div class="right_count">
+        <img src="../assets/icons/money.png" class="moneyIcon"></img>
+        <span class="count">120</span>
+      </div>
+      <img src="../assets/icons/user.png" v-if="!isUserPage" class="userIcon" @click="goUser"></img>
+    </div>
 	</div>
 </template>
 
 <script setup>
 import {
 	defineProps,
-	ref, 
+	ref,
 	onMounted,
 	computed
 } from 'vue';
