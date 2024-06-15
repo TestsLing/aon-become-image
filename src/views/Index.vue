@@ -6,8 +6,8 @@
 		<div class="container">
       <div class="banner">
         <img src="../assets/images/banner.png" mode=""></img>
-        <p>AON 构建世界名画</p>
-        <p>根据您的个人喜好，创作一幅独一无二的名画。</p>
+        <p>{{ appData.title }}</p>
+				<p>{{ appData.subtitle }}</p>
       </div>
 			<div class="uni-form-item uni-column">
 				<div class="title">上传图片</div>
@@ -92,6 +92,7 @@ const maxSize = 30 * 1024 * 1024;
 const templateList = ref([]);
 const templateId = ref(1);
 const prompt = ref('');
+const appData = process.env?.appData || {}
 
 function goToComplete(url) {
 	const query = { url: url }

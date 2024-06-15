@@ -2,7 +2,7 @@
 	<div class="custom-navbar">
 		<img src="../assets/logo_.png" class="logo" @click="goIndex"></img>
 
-		<div class="title">5分钟构建世界名画</div>
+		<div class="title">{{appData.name}}</div>
     <div class="right">
       <div class="right_count">
         <img src="../assets/icons/money.png" class="moneyIcon"></img>
@@ -25,6 +25,7 @@ import { useRouter,useRoute } from 'vue-router'
 const router = useRouter()
 const route = useRoute()
 const isUserPage = ref(false);
+const appData = process.env?.appData || {}
 
 
 const props = defineProps({
