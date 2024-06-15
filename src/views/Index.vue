@@ -30,7 +30,9 @@
 
 			</div>
 
-
+      <div class="uni-form-item error-text" v-if="showError">
+        <div class="content">请上传图片！</div>
+      </div>
 
       <div class="uni-form-item uni-column">
         <div class="title">选择名画模板</div>
@@ -47,9 +49,8 @@
       </div>
 
 
-      <div class="uni-form-item error-text" v-if="showError">
-				<div class="content">请上传图片！</div>
-			</div>
+
+
 			<div class="bottom_btn">
         <div class="spendCount">
           <img class="icon" src="../assets/icons/money.png" mode=""></img>
